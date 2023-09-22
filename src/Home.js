@@ -130,16 +130,11 @@ export default function Home() {
     return Boolean(clearedCards[card.id]);
   };
 
-  const handleRestart = () => {
-    setClearedCards({});
-    setOpenCards([]);
-    setShowModal(false);
-    setMoves(0);
-    setShouldDisableAllCards(false);
-    // set a shuffled deck of cards
-    setCards(shuffleCards(uniqueElementsArray.concat(uniqueElementsArray2)));
-  };
+ const [location, navigate] = useLocation();
 
+  const handleRestart = () => {
+  navigate("/")
+  };
   return (
     <div className="App">
       
