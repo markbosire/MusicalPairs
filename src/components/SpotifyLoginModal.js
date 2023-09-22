@@ -236,7 +236,7 @@ const SpotifyLoginModal = () => {
   const [location, navigate] = useLocation();
 
   const handleLogin = async () => {
-    const redirectUri = "http://localhost:3000/"; // Replace with your Spotify redirect URI
+    const redirectUri = "https://musical-pairs.vercel.app/"; // Replace with your Spotify redirect URI
     const scopes = ["user-top-read", "user-library-read", "user-read-private", "user-read-email"];
     const loginUrl = `https://accounts.spotify.com/authorize?client_id=512c03864daf489c9a14d8f880b93004&redirect_uri=${redirectUri}&scope=${scopes.join(
       "%20"
