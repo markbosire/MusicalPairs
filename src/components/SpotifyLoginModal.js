@@ -215,7 +215,7 @@ const SpotifyLoginModal = () => {
     const code = urlParams.get("code");
     const clientId = "512c03864daf489c9a14d8f880b93004"; // Replace with your Spotify client ID
     const clientSecret = "17a2c6e2c5d0458dabb06ac94c0f0f22"; // Replace with your Spotify client secret
-    const redirectUri = "http://localhost:3000/"; // Replace with your Spotify redirect URI
+    const redirectUri = "https://musical-pairs.vercel.app/"; // Replace with your Spotify redirect URI
     const tokenUrl = "https://accounts.spotify.com/api/token";
 
     const response = await fetch(tokenUrl, {
