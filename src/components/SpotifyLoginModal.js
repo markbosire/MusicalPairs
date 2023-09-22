@@ -48,6 +48,7 @@ const SpotifyLoginModal = () => {
       
       // Split lyrics into lines
       const lines = lyrics.split(/\n/g);
+       console.log(lines)
       const filteredLines = lines.filter(
         (line) => line.trim() !== "..." && !line.includes("This Lyrics is NOT for Commercial use")
       );
