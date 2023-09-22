@@ -38,6 +38,17 @@
 .card.is-flipped {
     transform: rotateY(180deg);
 }
+@media screen and (max-width: 800px) {
+    .card {
+        width: 90px;
+        height: 90px;
+      
+       
+    }
+    .card .card-face p{
+        font-size: 10px;
+    }
+}
 .card.is-inactive {
     opacity: 0;
 }
